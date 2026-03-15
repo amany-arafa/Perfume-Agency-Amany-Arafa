@@ -1,0 +1,1824 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+                                                    /* ============ Header ============ */  
+.header{
+      width:100%;
+      height:55PX;
+      color:rgb(240, 187, 12);
+      background-color:rgb(42, 54, 78) ;
+      border:4px  solid rgba(202, 149, 4, 0.4);
+      border-radius:8px; 
+      font-size:12px;
+      padding-top:10PX;
+      padding-right:10px;
+      position:fixed;
+      z-index:9999;
+      }
+.list{
+  list-style-type:none;
+  float:right;
+   }
+.list li{
+ display:inline-block;
+    font-size:16px;
+    padding-left:10px;
+    padding-right:5px;
+ }
+  .list li a {
+    color: #ecb708;             /* لون أبيض واضح */
+    text-decoration: none;      /* حذف الخط تحت الكلمة */
+    padding: 5px;         /* تكبير منطقة الضغط (مهم للانسيابية) */
+    display: inline-block;      /* لجعل البادينج يعمل بشكل صحيح */
+    cursor: pointer;            /* تحويل الماوس لشكل اليد */
+}
+.list li a:hover {
+    color: rgb(49, 211, 16);    /* اللون الأخضر يظهر فقط عند الوقوف بالماوس */
+}
+.list li a:focus{
+    color: rgb(49, 211, 16); 
+      background-color: rgba(255, 255, 255, 0.1); /* خلفية خفيفة جداً */
+    border-radius: 4px;
+}
+.list li a:active {
+    color: rgb(49, 211, 16);    /* اللون الأخضر يظهر فقط عند الوقوف بالماوس */
+}
+.i{
+  position: absolute;
+  left:10px; /* تحريكها داخل الحقل من اليسار */
+  top: 50%;
+  transform: translateY(-50%); /* لضبطها في المنتصف عمودياً */
+  color: #888;
+  pointer-events: none; /* لضمان أن الضغط يمر للحقل */
+}
+.header-icon i{
+margin-left:40px;
+font-size:30px;
+border:2px   solid  rgb(241, 235, 235);
+border-radius:3px ;
+color:#f5bb3f;
+background-color: white;
+float:left;
+ margin-left:20px;
+ transition: all 0.3s ease-in-out; /* لجعل الحركة ناعمة */
+    display: inline-block;
+      
+   }
+   .header-icon i:hover {
+    color: #ffcc00; /* يتحول للذهبي ليناسب النص والتفاحة */
+     cursor: pointer;
+     transform: scale(1.2); /* تكبير بسيط بنسبة 20% */
+}
+
+ .input-box  i{
+   float:left;
+   display:inline;
+  margin-left:15PX;
+   font-size:20px;
+   color:rgb(128, 127, 124);
+   margin-left:20px;
+   padding-left:20px;
+   padding-top:5px;
+    position:absolute;
+       }
+   .input-box  input{
+    width:250px;
+    height:30px;
+    border:3px  solid rgba(221, 111, 8, 0.4);
+      border-radius:10px;
+      padding-top:15px;
+      margin-left:20px;
+       cursor:pointer;
+       transition: all 0.3s ease; /* انسيابية في التحول */
+padding:relative;
+   }
+.input-box input:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 250px; /* يتمدد المربع قليلاً عند الكتابة (تأثير رائع!) */
+    border-color: rgb(49, 211, 16); /* يتغير لون الإطار للأخضر */
+    box-shadow: 0 0 8px rgba(49, 211, 16, 0.4); /* توهج أخضر ناعم */
+}
+
+/* تنسيق النص التوضيحي (Placeholder) ليكون لونه فاتحاً */
+.input-box input::placeholder{
+  color:rgba(255, 255, 255, 0.6);
+}
+.hero-buttons{
+ margin-top:0px;
+margin-left:30px;
+margin-right:85px ;
+padding:20px;
+}
+
+
+                                                 /* ---------- genral(title/line) ---------- */ 
+        .title{
+  font-size:75PX;
+    color:#d8a706;
+  text-align:center;
+    cursor:pointer;
+    text-transform:capitalize;
+     font-size:75PX;
+    font-style:italic;
+     font-weight:600;
+     margin-top: 40PX;
+     }                                                 
+.line{
+width:300px;
+height:5px;
+background: linear-gradient(to right, #d4af37, #fcf6ba, #d4af37); /* لون ذهبي متدرج */
+margin:auto;
+margin-top:10px;
+margin-bottom:50px;
+}
+.line:hover{
+    width: 150px; 
+    background-color: #dfa915;
+    box-shadow: 0 0 10px #181714, 0 0 20px #110d0d55; /* تأثير الإضاءة */
+    cursor: pointer;
+}
+.circleS5{
+              margin-left:500px;
+              display:inline-block;
+                         float:left;
+                        
+                              }
+ .circle5{
+               width:25px ;
+                height:25px;
+                   border-radius:50%;
+                     background-color:#2d2e2d;
+                         display:inline-block;
+                         float:left;
+                           margin-left:400px;
+                       
+                                                     }
+   .circle5:hover{
+      background-color: #0a9b4b;
+      transform:scale(1.2);         
+      box-shadow: 0 0 20px #e0b227, 0 0 40px #8d0404ef;    
+      cursor:pointer;
+      transform: translateY(-1997px);
+      transition:1s ease;
+      }
+ 
+    
+                                                     /* ---------- Section One ---------- */   
+
+
+
+
+
+.container{
+    width:100%;
+    margin:auto;
+   }
+    body{
+     width:100vw;
+     height:1055vh;
+  }
+.Agency{
+   width:100%;
+     height:950PX;
+     background-image:url(../images/91c2330e26fd2eab7845a390b51878fd.jpg);
+     background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../images/91c2330e26fd2eab7845a390b51878fd.jpg);
+      background-position:center;
+       background-size:cover;
+                  }
+      .Agency-content{
+        position:absolute;
+        top:50%;
+        left:50%;
+       transform: translate(-50%, -50%);
+        margin:autO;
+        padding:0px 66px;
+          }
+    .btn{
+         width:180PX;
+        height:50PX;
+          border:5px solid rgb(85, 3, 3);
+      border-radius:46px; 
+      color:rgb(17, 17, 16);
+      background-color:rgb(243, 127, 127) ;
+       font-size:20PX;
+       font-weight:blod;
+       cursor:pointer;
+       opacity:0.5;
+        text-align:center;
+        margin-left:180px;
+         cursor:pointer;
+          transition: all 0.3s ease; /* انسيابية الحركة */
+        }
+              .btn:hover{
+               background-color:rgb(6, 243, 46);
+               transform: translateY(-5px); /* حركة بسيطة للأعلى عند الوقوف */
+              box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+             }
+          
+           .btn:focus{
+    color:rgb(49, 211, 16); 
+      background-color: rgba(255, 255, 255, 0.1); /* خلفية خفيفة جداً */
+    border-radius: 4px;
+                  }
+    .btn:active {
+      color: rgb(49, 211, 16);    /* اللون الأخضر يظهر فقط عند الوقوف بالماوس */
+}
+        .Agency  .Agency-title{
+          font-size:73PX;
+          margin-top:390PX;
+        background: linear-gradient(to right, #bf953f, #fcf6ba, #b38728, #fcf6ba, #aa771c);
+           white-space:nowrap; 
+           text-align:center;
+           font-weight:bold;
+            text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.6); 
+            border: 1px solid  white;
+            border-radius:10px;
+              }
+
+
+       .Agency-P{
+        font-size:30PX;
+        line-height:50px;
+         color:rgb(196, 235, 191);
+         text-align:center;
+         padding-top:50px;
+         padding-bottom: 50px;
+            
+       .Agency  Agency-title:hover{
+       background-color:rgb(245, 236, 238);
+      }
+      .input-box .i{
+      position:absolute;
+      font-weight:blod;
+     font-size:18px;
+     color:black;
+     width:50px ;
+     height:30px;
+      border:2px solid rgb(190, 181, 189.0.5);
+      border-radius:3px;
+    }
+.input-box{
+    position: relative;
+}
+.input-box input{
+    width:250px;
+    height:40px;
+    padding-left: 40px; /* مساحة للأيقونة */
+    border:2px solid #3a69c1;
+    border-radius:6px;
+    font-size:18px;
+ position:relative;
+ float:left;
+  margin-left:160px;
+  }
+                                                  /* =====  Section-welcome To Website ===== */
+                                                  /* ===== Start ===== */
+
+                                                 
+  }
+  
+.Welcome-title{
+ color:#f1f3f0;
+margen-left:40px; 
+font-size:40px;
+margin-bottom:60PX;
+ word-spacing:2px
+ text-transform:capitalize;
+  ext-align:center;
+   padding-top:40px ;
+   text-shadow: 0 0 10px rgba(22, 240, 51, 0.5);
+    transition: 0.3s;
+ }
+.title:hover{
+  border-color:#530249;
+  opacity:.5;
+}    
+   .welcome-icon {
+color:rgb(207, 187, 5);
+width:40px;
+height:40px;
+padding-top:30px;
+font-size:35px;
+ z-index:index23;
+  word-spacing:8px
+  padding-left:30px;
+  margin-left:160px;
+  text-align:center:
+}
+  .btn1{
+text-align:center;
+font-size:25px;
+color:rgb(8, 8, 7);
+margin-top:50PX;
+background-color:#e0b90c ;
+border:4px  solid    rgb(240, 232, 232);
+border-radius:8px;
+}
+.welcome:hover  .welcome-icon {
+  transform: translateY(-5px); 
+  box-shadow: 0 5px 15px rgba(80, 134, 28, 0.3); transform:scale(1.08);
+   }
+.welcome-title2:hover {
+    text-shadow: 0 0 20px rgba(22, 240, 51, 0.8); 
+}
+
+.welcome{
+width:370px;
+height:440px;
+border:2px  solid  rgb(116, 114, 114);
+border-radius:18px;
+color:rgb(247, 237, 193);
+background-color:#2c2b2a;
+text-align:center;
+font-size:25PX;
+float:left;
+margin-left:40px;
+margin-top:50px;
+margin-bottom:100PX;
+ position:relative;
+ overflow: hidden;
+ z-index:1;
+ display:block;
+ word-spacing:2px;
+  }
+.welcome-p1{
+padding-left:30px;
+ padding-right:30px;
+ text-transform:lowercase;
+ }
+
+
+.welcome::after{
+  position:absolute;
+    content:'';
+  width:0%;
+  height:100%;
+  top:0;
+  left:0;
+  background-color:rgb(245, 168, 4);
+  opacity:0.7;
+   transition:1.5s;
+  }
+.welcome:hover::after{
+  position:absolute;
+  width:0%;
+  height:0%;
+  top:0;
+  left:0;
+  background-color:rgb(238, 161, 18);
+  opacity:0.3;
+}
+.welcome::before{
+  position:absolute;
+   content:'';
+  width:0%;
+  height:0;
+    right:100%;
+  background-color:rgb(22, 21, 20);
+  opacity:0.3;
+ transition:1.5s;
+  z-index:0;
+}
+.welcome:hover::before{
+  position:absolute;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  background-color:rgb(240, 240, 36);
+  opacity:0.4;
+  transition:1.5s;
+   z-index:0;
+}
+
+                                                      
+
+
+.container{
+ width:100%;
+   margin:auto;
+       }
+.partner{
+
+    }
+ .what{
+width:100%;
+height:1300px;
+margin-bottom:300px;
+margin-top:2 50px;
+background-color:#010701;
+    }
+ .offer{
+  width:525px;
+height:250px;
+color:rgb(232, 232, 238);
+border:6px  solid  rgb(88, 88, 90);
+border-radius:8px;
+background-color:rgb(30, 29, 31);
+padding:20px;
+text-align:center;
+ position:relative;
+ float:left;
+ margin-left:70px;
+ margin-top:20px;
+ margin-bottom:150PX;
+    position: relative
+   }
+ .offer-P1{
+  font-size:24px;
+  color:#eceb7c;
+  text-transform:lowercase;
+} 
+.offer::after{
+  position:absolute;
+    content:'';
+  width:0;
+  height:0;
+  top:0;
+  left:100%;
+  background-color:rgb(102, 2, 89);
+  opacity:0.3;
+   transition:1.5s;
+    z-index:0;
+}
+.offer:hover::after{
+  position:absolute;
+  width:0%;
+  height:0%;
+  top:0;
+  left:0%;
+  right:0 ;
+  background-color:rgb(20, 20, 19);
+  opacity:0.3;
+ }
+.offer::before{
+  position:absolute;
+   content:'';
+  width:0%;
+  height:0;
+  left:0;
+  right:0% ;
+  background-color:rgb(233, 220, 103);
+  opacity:0.5;
+ transition:1.5s;
+     z-index:0;
+}
+.offer:hover::before{
+  position:absolute;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  background-color:rgb(222, 236, 93);
+  opacity:0.5;
+  transition:1.5s;
+}
+
+.offer   .icon{
+ font-size :45px;
+font-size: rgb(241, 236, 236);
+ 
+}
+
+.offer   .offer-title{
+font-size:rgb(240, 234, 181);
+  text-transform:capitalize;
+  font-size: 35px;
+}                                          
+..offer  i{
+    font-size: 40px;
+    color: #a5ec62;
+    transition: all 0.4s ease;
+}
+
+.offer:hover i{
+    color: #6ae419;
+    transform: scale(1.15);
+}
+
+.fade-line {
+    border: 0;
+    height: 2px;
+    width: 80%;
+    background-image:linear-gradient(to right, transparent, #1b1b1a, transparent);
+    margin: 30px auto;
+}
+       
+
+                                                          /*----------------------------*/
+
+
+
+.cantainer{
+
+
+}
+.partner{
+
+
+
+}
+.works{
+  width:1600;
+  height:1700px;
+
+background-color: #0f0d0a; /* لون داكن ليناسب العطور */
+}
+.Featured1{
+         width:385px;
+        height:700px;
+        border:2px  solid  rgb(245, 242, 236);
+        border-radius:19px;
+       float:left;
+   margin:20px;
+     
+     text-align:center;
+     color: #faf4f4;
+    
+     background-image:url(../images/4ac281774743383f0bdebbb3e381d89d.jpg);
+        background-position:center;
+       background-repeat:no-repeat;
+      background-size:cover;
+       position: relative;
+          font-size:25px;
+            } 
+.Featured1  .Featured-content{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background-color:rgba(121, 29, 121, 0.6);
+  opacity:0;
+  transition:0.5s;
+  padding-top:70px;
+}
+.Featured1:hover .Featured-content{
+  background-color: #0a9b4b;
+   visibility:visible;
+  opacity:0.4;
+  box-shadow: 0 15px 35px rgba(240, 239, 236, 0.35);
+}
+.Featured2{
+         width:385px;
+        height:700px;
+        border:2px  solid  rgb(250, 244, 244);
+        border-radius:19px;
+       float:left;
+      margin:20px;
+    
+     text-align:center;
+         color: #f5efef;
+        
+     background-color:#16f033;
+     background-image:url(../images/4b0af252697be8c011fc0e1c9025ea94.jpg);
+        background-position:center;
+       background-repeat:no-repeat;
+      background-size:cover;
+       position: relative;
+          font-size:25px;
+            } 
+.Featured2  .Featured-content{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background-color:rgba(134, 129, 134, 0.6);
+  opacity:0;
+  transition:0.5s;
+  padding-top: 70px;
+}
+/* عند الهفر */
+.Featured2:hover .Featured-content{
+   visibility:visible;
+  opacity:1;
+}
+    .Featured3{
+         width:385px;
+        height:700px;
+        border:2px  solid  rgb(243, 238, 238);
+        border-radius:19px;
+       float:left;
+        text-align:center;
+       margin:20px;
+        color: #f5f1f1;
+         background-image:url(../images/9c1847e92b585cb8b41c2f89790ac9a5.jpg);
+        background-position:center;
+       background-repeat:no-repeat;
+      background-size:cover;
+       position: relative;
+          font-size:25px;
+            } 
+.Featured3  .Featured-content{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background-color:rgba(3, 83, 10, 0.6);
+  opacity:0;
+  transition:0.5s;
+    padding:70px;
+}
+/* عند الهفر */
+.Featured3:hover .Featured-content{
+   visibility:visible;
+  opacity:1;
+  box-shadow: 0 15px 35px rgba(240, 239, 236, 0.35);
+}
+.Featured4{
+         width:385px;
+        height:700px;
+        border:2px  solid  rgb(248, 241, 241);
+        border-radius:19px;
+       float:left;
+            text-align:center;
+   margin:20px;
+  
+   color:#eef7f2;
+     background-color:#16f033;
+     background-image:url(../images/ce28cc575fe4ec550ae138b3d032ee6a.jpg);
+        background-position:center;
+       background-repeat:no-repeat;
+      background-size:cover;
+       position: relative;
+          font-size:25px;
+            } 
+.Featured4  .Featured-content{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background-color:rgba(72, 83, 177, 0.6);
+  opacity:0;
+  transition:0.5s;
+  padding-top:70px;
+}
+/* عند الهفر */
+.Featured4:hover .Featured-content{
+   visibility:visible;
+  opacity:1;
+  box-shadow: 0 15px 35px rgba(240, 239, 236, 0.35);
+}
+.Featured5{
+         width:385px;
+        height:700px;
+        border:2px  solid  rgb(252, 246, 246);
+        border-radius:19px;
+       float:left;
+    margin:20px;
+     text-align:center;
+         color: #f8f1f1;
+     background-color:#16f033;
+     background-image:url(../images/b7b4871dd0afccce14b8a357d0dae090.jpg);
+     background-position:center;
+     background-repeat:no-repeat;
+      background-size:cover;
+       position: relative;
+          font-size:25px;
+            } 
+.Featured5  .Featured-content{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background-color:rgba(25, 22, 209, 0.6);
+  opacity:0;
+  transition:0.5s;
+  padding-top: 70px;
+}
+.Featured5:hover .Featured-content{
+   visibility:visible;
+  opacity:1;
+  box-shadow: 0 15px 35px rgba(240, 239, 236, 0.35);
+}
+.Featured6{
+         width:385px;
+         height:700px;
+         border:2px  solid  rgb(243, 236, 236);
+         border-radius:19px;
+          float:left;
+         text-align:center;
+        margin:20px;
+       
+          color: #edf3ec;
+     background-color:#16f033;
+     background-image:url(../images/e0c2ad19508a96facbd1f19eb75c8787.jpg);
+     background-position:center;
+     background-repeat:no-repeat;
+     background-size:cover;
+     position: relative;
+      font-size:25px;
+            } 
+.Featured6  .Featured-content{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background-color:rgba(224, 147, 4, 0.6);
+  opacity:0;
+  transition:0.5s;
+  padding-top: 70px;
+}
+/* عند الهفر */
+.Featured6:hover .Featured-content{
+   visibility:visible;
+  opacity:1;
+   box-shadow: 0 15px 35px rgba(240, 239, 236, 0.35);
+}
+       
+.main-hr {
+    border: 0;
+     height: 2px; 
+    margin: 20px auto;
+    width: 80%; 
+    background-image: linear-gradient(to right, rgba(185, 247, 157, 0), rgba(23, 24, 23, 0.75),rgba(22, 240, 51, 1 ));
+}
+ 
+
+  /*--------------------------*/
+  .fade-line{
+border: 0;
+     height:2px; 
+    margin: 20px auto;
+    width: 80%;
+    background-image: linear-gradient(to right, rgba(185, 247, 157, 0), rgba(23, 24, 23, 0.75),rgb(4, 131, 4));
+  }
+
+.container{
+ width:100%;
+ margin:auto;
+      }
+.partner{
+    }
+    .choose{
+ width:100%;
+height:900px;
+background-color:#010701;
+border-radius:10px;
+border:8px solid #024d2e;
+margin-top:60px;
+padding-top:50px;
+    }
+  .choose1{
+    width:450px ;
+    height:750px ;
+      border:5px  solid  rgb(87, 47, 3) ;
+    border-radius:50px;
+     background-image: url(../images/059938af10d7be495780a771fb964ea8.jpg);
+ background-repeat:no-repeat;
+  background-position:center;
+   background-size:cover;
+ float:right;
+ margin-right:30px;
+}
+.choose1:hover{
+    /* تكبير بسيط للصورة يعطي إيحاء بالفخامة */
+    transform: scale(1.03) translateY(-10px);
+    
+    /* إضافة هالة ضوئية خضراء حول الإطار */
+    border-color: #472403; 
+    box-shadow: 0 20px 40px rgba(136, 76, 19, 0.3), 
+                0 0 20px rgba(223, 129, 66, 0.2);
+        cursor: pointer;
+      }
+.choose1::after {
+    content: '';
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    width: 50%;
+    height: 300%;
+    background:linear-gradient(rgba(73, 68, 68, 0) 0%, rgba(187, 179, 179, 0.1) 50%,  rgba(255,255,255,0) 100%);
+  transform: rotate(45deg);
+    transition: all 0.7s;
+}
+.choose1:hover::after {
+    top: -50%;
+    left:150%;
+}
+.choose1::before {
+    content: '';
+    position: absolute;
+    top:0;
+    left: -150%;
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(  120deg,  transparent,  rgba(223, 186, 151, 0.2), transparent   );  
+    transition: all 0.6s;  
+}
+.choose1:hover::before {
+    left: 150%;/* تجعل البريق يمر بسرعة من اليسار لليمين */
+}
+.choose2{
+ width:730px ;
+    height:750px ;
+      border:5px  solid  rgb(18, 75, 35) ;
+    border-radius:50px;
+    margin-left:40px;
+ float:left;
+ }
+.choose-first{
+width:100%;
+height:800px;
+background-color:#010701;
+border-radius:10px;
+border:8px solid #024d2e;
+margin-top:140px;
+}
+.choose-one{
+ width:450px ;
+    height:750px ;
+      border:5px  solid  rgb(236, 202, 182) ;
+    border-radius:50px;
+     background-image: url(../images/248010c886b413ad7c27dff7f5e917bb.jpg);
+  background-position:center;
+   background-size:cover;
+ float:right;
+ margin-right:30px;
+}
+.choose-one:hover{
+    /* تكبير بسيط للصورة يعطي إيحاء بالفخامة */
+    transform: scale(1.03) translateY(-10px);
+    
+    /* إضافة هالة ضوئية خضراء حول الإطار */
+    border-color: #e0af0f; 
+    box-shadow: 0 20px 40px rgba(68, 65, 60, 0.3), 
+                0 0 20px rgba(80, 200, 120, 0.2);
+    
+    cursor: pointer;
+}
+.choose-one::after {
+    content: '';
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    width: 50%;
+    height: 300%;
+    background:linear-gradient(rgba(88, 86, 85, 0) 0%, rgba(153, 111, 83, 0.1) 50%,  rgba(97, 48, 5, 0) 100%);
+  transform: rotate(45deg);
+    transition: all 0.7s;
+}
+.choose-one:hover::after {
+    top: -50%;
+    left:150%;
+}
+.choose-one::before {
+    content: '';
+    position: absolute;
+    top:0;
+    left: -150%;
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(  120deg,  transparent,  rgba(65, 52, 52, 0.2), transparent   );  
+    transition: all 0.6s;  
+}
+.choose-one:hover::before {
+    left: 150%;/* تجعل البريق يمر بسرعة من اليسار لليمين */
+}
+
+.choose-two{
+  width:700px ;
+    height:750px ;
+    border:5px  solid  rgb(17, 17, 9) ;
+    border-radius:50px;
+    margin-left:40px;
+ float:left;
+}
+.choose-three{
+width:450px ;
+    height:750px ;
+      border:5px  solid  rgb(204, 190, 151) ;
+    border-radius:50px;
+     background-image: url(../images/3636519f0abb9b978ce970841b886b3b.jpg);
+  background-position:center;
+   background-size:cover;
+ float:right;
+ margin-right:30px;
+}
+.choose-three:hover{
+    /* تكبير بسيط للصورة يعطي إيحاء بالفخامة */
+    transform: scale(1.03) translateY(-10px);
+    
+    /* إضافة هالة ضوئية خضراء حول الإطار */
+    border-color: #554202; 
+    box-shadow: 0 20px 40px rgba(228, 123, 3, 0.3), 
+                0 0 20px rgba(80, 200, 120, 0.2);
+     cursor: pointer;
+}
+.choose-three::after {
+    content: '';
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    width: 50%;
+    height: 300%;
+    background:linear-gradient(rgba(231, 173, 139, 0) 0%, rgba(255,255,255,0.1) 50%,  rgba(255,255,255,0) 100%);
+  transform: rotate(45deg);
+    transition: all 0.7s;
+}
+.choose-three:hover::after {
+    top: -50%;
+    left:150%;
+}
+.choose-three::before {
+    content: '';
+    position: absolute;
+    top:0;
+    left: -150%;
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(  120deg,  transparent,  rgba(117, 111, 72, 0.2), transparent   );  
+    transition: all 0.6s;  
+}
+.choose-three:hover::before {
+    left: 150%;/* تجعل البريق يمر بسرعة من اليسار لليمين */
+}
+
+
+.choose-four{
+  width:730px ;
+  height:750px ;
+  border:5px  solid  rgb(192, 192, 144) ;
+  border-radius:50px;
+  margin-left:40px;
+  float:left;
+}
+.choose-circleS{
+margin-right:170PX;
+margin-bottom:40PX;
+}
+.choose-circle{
+width:20px ;
+height:20px;
+border-radius:50%;
+background-color:#0e160b;
+float:right;
+ display:inline-block;
+ margin-right:20px;
+ margin-top: 10PX;
+ }
+ .choose-line1{
+  width:950px;
+height:10px;
+background-color:#0d130c;
+margin:auto;
+border:0PX ;
+border-radius:8PX;
+margin-bottom: 90px;
+}
+
+.choose-circle:hover {
+    background-color: #e4b314;      
+    transform:scale(1.2);           
+    box-shadow: 0 0 20px #e4b314,    
+                0 0 40px #e4b31455; 
+    cursor:pointer;
+}
+.choose-line2{
+  width:100PX ;
+  height:15PX ;
+  background-color:#eff5ef;
+margin-left:50px;
+}
+.choose-line2:hover{
+    width: 150px; 
+    background-color: #fafaf1;
+    box-shadow: 0 0 10px #eee0e0, 0 0 20px #f1e8e855; /* تأثير الإضاءة */
+    cursor: pointer;
+}
+.line-with-arrows {
+    width: 70%;               /* صغري العرض قليلاً للتأكد من وجود مساحة للسهم */
+    height: 6px;
+    background-color: #e09710;
+    margin: 60px auto;        /* مساحة كافية من الأعلى والأسفل */
+    position: relative;
+    /* لإصلاح أي مشكلة اختفاء */
+    display: block; 
+}
+
+/* السهم الأيسر */
+.line-with-arrows::before {
+    content: "";              /* تأكدي أنها علامات تنصيص فارغة */
+    position: absolute;
+    left: -15px;              /* لو لم يظهر، جربي جعلها 0 */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0; 
+    height: 0;
+    /* رسم السهم */
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 15px solid #aa8c8c; /* هذا هو السهم */
+}
+
+/* السهم الأيمن */
+.line-with-arrows::after {
+    content: "";
+    position: absolute;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0; 
+    height: 0;
+    /* رسم السهم */
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 15px solid #b84b0c; /* هذا هو السهم */
+}
+    .choose-title1{
+padding-left:60PX;
+    color:#f0efe2;
+    font-style:italic;
+    font-size:95px;
+font-weight:600px;
+margin-top:40PX;
+    }
+   .choose-title1:hover{
+color: #ecf1ee; 
+  text-shadow: 0 0 10px rgba(80, 200, 120, 0.6);
+  transform: translateX(10px); 
+   }
+ .list1{
+  color:#d7f5db;
+  font-size:25px;
+  list-style-type:none;
+  padding-left:20px;
+  line-height:65px;
+ }
+.choose-p{
+margin-top:70px;
+font-size:30px ;
+font-weight:blod;
+color:rgb(155, 115, 82);
+text-align:center;
+line-height:50px;
+}
+.choose-one-p{
+margin-top:70px;
+font-size:30px ;
+font-weight:blod;
+color:rgb(121, 90, 50);
+text-align:center;
+line-height:50px;
+}
+.choose-two-p{
+margin-top:70px;
+font-size:30px ;
+font-weight:blod;
+color:rgb(207, 155, 107);
+text-align:center;
+line-height:50px;
+}
+.choose-three-p{
+  margin-top:70px;
+font-size:30px ;
+font-weight:blod;
+color:rgb(221, 126, 36);
+text-align:center;
+line-height:50px;
+}
+
+.choose-img11{
+  background-color:#09070e;
+  width:100%;
+  height:1090px;
+padding:460PX;
+   background-image:url(../images/14a65d77c2e8c729c9a017379ec509ca.jpg);
+ background-repeat:no-repeat;
+  background-position:center;
+  background-attachment:fixed;
+   background-size:cover;
+   position:relative;
+         }
+.choose-img11-overlay{
+position:absolute;
+background-color:#0f0e0f;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background-color:hsla(120, 71%, 3%, 0.7);
+font-size:25px;
+overflow:hidden;
+background-color:rgba(14, 13, 11, 0.7); 
+line-height: 30px;
+
+}
+.Content6{
+
+width: 250PX;
+height: 250PX;
+background-color: hsl(180, 4%, 5%,0.3);
+float:right;
+}
+.Content5{
+width:400PX;
+height: 700PX;
+background-color: hsl(60, 4%, 10%,0.3);
+float:left;
+}
+.choose-img6{
+  width:450px;
+height:250px;
+   float:right;
+  display:inline-block;
+  color:rgb(248, 246, 239);
+  text-align:center;
+  font-size:25px;
+  margin-right: 150px;
+      }
+ 
+.choose-img5{
+  width:450px;
+  height:450px;
+     color:rgb(236, 234, 234);
+  display:inline-block;
+  float:left;
+  text-align:center;
+  font-size:25px;
+  font-weight:blod;
+  margin-left:150px;
+  }
+
+.choose-img5  img{
+border-radius:50%;
+border:5px solid   rgb(95, 2, 2) ;
+margin-top:190px;
+font-weight:blod;
+ text-align:center;
+}
+.choose-img6  img{
+border-radius:50%;
+border:5px solid   rgb(100, 2, 2) ;
+margin-top:190px;
+ text-align:center;
+}
+.choose-img2-p1{
+  color: #f0a027;
+  font-family: 'Montserrat', sans-serif;
+   line-height: 40px;
+
+}
+ .choose-img2-p{
+  color: #f0de8d;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 40px;
+ }
+
+  
+  .choose-five{
+    width:430px ;
+    height:750px ;
+      border:5px  solid  rgb(11, 219, 91) ;
+    border-radius:50px;
+     background-image: url(../images/414fa9b75b24b2cda170710de6c2f222.jpg);
+ background-repeat:no-repeat;
+  background-position:center;
+   background-size:cover;
+ float:right;
+ margin-right:30px;
+}.choose-five:hover{
+    /* تكبير بسيط للصورة يعطي إيحاء بالفخامة */
+    transform: scale(1.03) translateY(-10px);
+    
+    /* إضافة هالة ضوئية خضراء حول الإطار */
+    border-color: #444644; 
+    box-shadow: 0 20px 40px rgba(248, 247, 246, 0.3), 
+                0 0 20px rgba(28, 59, 3, 0.2);
+        cursor: pointer;
+      }
+.choose-five::after {
+    content: '';
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    width: 50%;
+    height: 300%;
+    background:linear-gradient(rgba(3, 56, 19, 0) 0%, rgba(187, 179, 179, 0.1) 50%,  rgba(255,255,255,0) 100%);
+  transform: rotate(45deg);
+    transition: all 0.7s;
+}
+.choose-five:hover::after {
+    top: -50%;
+    left:150%;
+}
+.choose-five::before {
+    content: '';
+    position: absolute;
+    top:0;
+    left: -150%;
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(  120deg,  transparent,  rgba(4, 99, 67, 0.2), transparent   );  
+    transition: all 0.6s;  
+}
+.choose-five:hover::before {
+    left: 150%;/* تجعل البريق يمر بسرعة من اليسار لليمين */
+}
+.choose-six{
+ width:745px;
+    height:750px;
+ border:5px  solid  rgb(28, 29, 28) ;
+    border-radius:50px;
+    margin-left:40px;
+ float:left;
+ font-size: 30px;
+
+ }
+ .choose-six .choose-p{
+
+color: #096d43;
+
+ }
+ .Shop-Now{
+ width:645px;
+    height:50px;
+ border:2px  solid  rgb(240, 248, 240) ;
+    border-radius:10px;
+    margin-left:40px;
+  font-size: 30px;
+  color:#f2f7f4;
+  }
+ .list1  .visit-our{
+text-align:center;
+color:#eb9729
+  }
+   
+                  /*----------------------------*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.container{
+ width:100%;
+ margin:auto;
+      }
+.partner{
+    }
+    .table{
+width:100%;
+height:650PX;
+ background-color:rgb(14, 13, 12);
+border:6px  solid  rgb(253, 188, 9);
+border-radius:33px;
+  }
+   .pricing{
+width:340px;
+height:550px;
+border:6px  solid  rgb(253, 234, 63);
+border-radius:33px;
+color:rgb(245, 246, 250);
+float:left;
+margin: 40px;
+ text-align:center;
+  position:relative;
+  transition: 0.4s ease;
+    box-shadow: 0 0 0 rgba(255,215,0,0);
+    }
+    .pricing:hover{
+    transform: translateY(-12px);
+    box-shadow: 0 15px 35px rgba(255,215,0,0.35);
+}
+
+     .circle{
+      width:150PX;
+      height:150PX;
+      border-radius:50%;
+      border:10px  solid  rgb(179, 133, 7);
+      color:#eb9e2b;
+      margin:auto;
+      font-size:35PX;
+      padding-bottom:10PX;
+     margin-top:20px;
+               }
+               .pricing:hover .circle{
+    border-color: #ffd700;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+  .circle  P{
+    color:#49a021;
+    font-size:30PX;
+  text-align:center;
+  padding-top: 20px;
+   padding-bottom:20PX;
+    }
+    
+   .pricing1{
+ color:#f1eeba;
+    font-size:20PX;
+  text-align:center;
+  line-height:40PX;
+  padding: 10px;
+   word-spacing:3px;
+  }
+  .pricing-title2{
+color:#f5bb1c;
+    font-size:30PX;
+  text-align:center;
+  padding-top:10PX;
+  margin-top:10px;
+   }
+   .pricing-title1{
+color:#f5f4f1;
+    font-size:30PX;
+  text-align:center;
+  line-height:30PX;
+  padding: 10px;
+  text-transform:upercase;
+   }
+
+
+
+
+.pricing    button{
+    transition: 0.3s;
+}
+
+.pricing-card:hover button{
+    background-color:#ffd700;
+    color:#000;
+    transform: scale(1.08);
+}
+.pricing::after{
+  position:absolute;
+ content:'';
+  width:0%;
+  height:100%;
+  top:0;
+  left:0;
+  background-color:rgb(240, 245, 239);
+  opacity:0.7;
+   transition:1.5s;
+    z-index:0;
+}
+.pricing:hover::after{
+  position:absolute;
+  width:0%;
+  height:100%;
+  top:0;
+  left:0;
+  background-color:rgb(237, 243, 237);
+  opacity:0.3;
+ }
+.pricing::before{
+  position:absolute;
+   content:'';
+  width:100%;
+  height:100;
+  left:0%;
+  background-color:rgb(219, 188, 7);
+  opacity:0.3;
+ transition:1.5s;
+     z-index:0;
+}
+.pricing:hover::before{
+  position:absolute;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  background-color:rgb(219, 183, 20);
+  opacity:0.3;
+  transition:3s;
+  
+}
+.container{
+ width:100%;
+   margin:auto;
+       }
+.partner{
+    }
+   .perfume-img{
+    width:100% ;
+    height:1600px;
+      background-image:url(../images/d4af20eb7931c5def54ad1eb49117d1b.jpg);
+ background-repeat:no-repeat;
+  background-position:center;
+  background-attachment:fixed;
+   background-size:cover;
+  position:relative;
+ 
+ }
+.perfume-overlay{
+ position:absolute;
+background-color:#0a0a0a;
+top:0;
+left:0;
+width:100%;
+height:100%;
+text-align:center;
+background-color:hsla(120, 1%, 69%, 0.3);
+ font-size:20px;
+}
+.perfume-icon{
+  display:inline-block;
+  float:left;
+     padding-top:170px;
+color:#f7f6f6;
+text-align:center;
+padding-left:40px;
+font-weight:600px;
+font-size:45px;
+margin-top:150px;
+}
+.perfume-icon  i{
+  font-size:65px;
+   line-height:80px;
+  color:#035327;
+}
+.perfume-icon{
+  color: #c5f3cb;
+}
+                                                       /* =====  end ===== */
+
+
+  /* =====  Section-our-team ===== */
+
+
+.container{
+ width:100%;
+ margin:auto;
+      }
+.partner{
+    }
+    .our{
+      width:100%;
+      height:550px;
+      background-color:rgb(7, 9, 26);
+     
+      border:2px  solid  rgb(245, 241, 42);
+      border-radius:33px;
+      float:left;
+          }
+       .team{
+width:330px;
+height:450px;
+border:3px  solid  rgb(245, 241, 42);
+border-radius:33px;
+color:rgb(221, 13, 13);
+ margin-left:80PX;
+text-align:center;
+margin-top:40px;
+padding:15px;
+font-size:16PX;
+float:left;
+
+ position:relative;
+line-height:30px;
+font-style:italic;
+      }
+    .team img{
+      border:3px  solid  rgb(247, 243, 59);
+      border-radius:33px;
+      float:left;
+      text-align:center;
+             }
+             .team-title{
+             text-align:center;
+              color:#092c01;
+              cursor:pointer;
+              font-size:65px;
+              font-style:italic;
+               }
+             .team-title1{
+             text-align:center;
+              color:#ecc65c;
+             cursor:pointer;
+             font-style:italic;
+             font-size:30px;
+             }
+        .team-P1{
+               color:#f2f7f3;
+                font-size:30px;
+                font-style:italic;
+                    line-height:60px;
+                   text-transform:lowercase;
+                 text-align:center;
+             }
+   
+  
+.team::after{
+  position:absolute;
+    content:'';
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  background-color:rgb(214, 184, 15);
+  opacity:0.3;
+   transition:1.5s;
+    z-index:0;
+}
+.team:hover::after{
+  position:absolute;
+  width:0;
+  height:0;
+  top:0;
+  left:50%;
+  background-color:rgb(233, 219, 24);
+  opacity:0.3;
+ 
+}
+.team::before{
+  position:absolute;
+   content:'';
+  width:100%;
+  height:0;
+  left:0
+
+  background-color:rgb(221, 140, 19);
+  opacity:0.9;
+ transition:1.5s;
+     z-index:0;
+}
+.team:hover::before{
+  position:absolute;
+  width:100%;
+  height:0;
+  top:0;
+  left:0;
+  background-color:rgb(206, 182, 48);
+  opacity:0.9;
+  transition:2s;
+}
+ .team-img:hover  .team{
+    border-color: #ffd700;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+.team:hover{
+    transform: translateY(-12px);
+    box-shadow: 0 15px 35px rgba(255,215,0,0.35);
+}
+                                                         /* =====  end ===== */
+
+ 
+                                               /* =====Section-news-recent ===== */
+                                                       /* ===== start===== */
+
+ .news{
+width:100%;
+ height:1000px;
+background-color:#0a040a;
+border:2px  solid  rgb(245, 241, 42);
+border-radius:13px;
+padding-top:60px;
+    }
+ .recent{
+       width:350px;
+       height:800px;
+       color:rgb(223, 226, 22);
+       border:2px  solid  rgb(253, 240, 54);
+       border-radius:23px;
+       margin-left:50PX;
+       padding-top:10px;
+       text-align:center;
+       font-size:18PX;
+       float:left;
+       position:relative;
+         
+                    }
+   .recent7{
+    width:33%;
+    height:80px ;
+    text-align:center;
+    margin-top:20px;
+    float:left;
+    display:block;
+   }
+   .recent-title2{
+      color:#16f033;
+      font-size:35px;
+     font-weight:bold;
+     font-style:italic;
+     padding-top:20PX;
+      }
+ .recent-p1{
+        color:rgb(219, 245, 196);
+        line-height:30px;
+        font-size:24px;
+        font-weight:500PX;
+        text-transform:lowercase;
+        letter-spacing:1px;
+        padding: 20px;
+         }
+   .recent img{
+   display:inline-block;
+      border:3px solid rgb(240, 217, 85);
+      border-radius:6px;
+    }
+  .news .btn1{
+    width:160px;
+   height:40px;
+    border:20px   solid   white;
+    border-radius:8px;
+    border: 3PX  Solid     white;
+    color:#0a0f0b;
+    background-color:#e9b816;
+    font-size:28px;
+   font-weight:blod;
+}
+.btn1:hover{
+               background-color:rgb(6, 243, 46);
+               transform: translateY(-5px); /* حركة بسيطة للأعلى عند الوقوف */
+              box-shadow: 0 5px 15px rgba(219, 187, 5, 0.3);
+             }
+                       
+ .btn1:focus{
+    color:rgb(49, 211, 16); 
+      background-color: rgba(255, 255, 255, 0.1); /* خلفية خفيفة جداً */
+    border-radius: 4px;
+                  }
+ .btn1:active {
+      color: rgb(49, 211, 16);    /* اللون الأخضر يظهر فقط عند الوقوف بالماوس */
+    }
+         .recent-circleS{
+                margin:auto;
+                              }
+ .recent-circle{
+               width:25px ;
+                height:25px;
+                   border-radius:50%;
+                     background-color:#2d2e2d;
+                         display:inline-block;
+                         float: left;
+                                                     }
+   .recent-circles   .recent-circle:hover{
+      background-color: #0a9b4b;
+      transform:scale(1.2);         
+      box-shadow: 0 0 20px #e4b314, 0 0 40px #e4b31455;    
+      cursor:pointer;
+      transform: translateY(-1997px);
+      transition:1s ease;
+      }
+ 
+.recent::after{
+  position:absolute;
+    content:'';
+  width:0%;
+  height:100%;
+  top:0;
+  left:0;
+  background-color:rgb(239, 245, 237);
+  opacity:0.7;
+   transition:1.5s;
+    z-index:0;
+}
+.recent:hover::after{
+  position:absolute;
+  width:0%;
+  height:100%;
+  top:0;
+  left:0;
+  background-color:rgb(231, 210, 16);
+  opacity:0.3;
+ }
+.recent::before{
+  position:absolute;
+   content:'';
+  width:100%;
+  height:100;
+  left:0%;
+  background-color:rgb(219, 206, 13);
+  opacity:0.3;
+ transition:1.5s;
+     z-index:0;
+}
+.recent:hover::before{
+  position:absolute;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  background-color:rgb(233, 233, 4);
+  opacity:0.2;
+  transition:3s;
+  border-radius:5px;
+}
+
+.recent-img:hover  .recent{
+    border-color: #ffd700;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+.recent:hover{
+    transform: translateY(-12px);
+    box-shadow: 0 15px 35px rgba(255,215,0,0.35);
+}
+
+  
+                                   /* *******************************    
+                                                               Footer
+                                                          ******************************** */
+
+  .computer{
+     width:100%;
+     height:670PX;
+        background-color:rgb(49, 49, 47);
+           position:relative;
+           }
+          
+ .computer-content{
+       position:absolute;
+        top:50%;
+          left:50%;
+             transform: translate(-50%, -50%);
+               padding-top:110px;
+               position:relative;
+                      z-index:9999;
+                   }
+ .computer-p{
+        width:950px;
+        height: 250PX;
+        color:#9fa09d;
+         font-size:20px;
+         font-weight:bold;
+               padding-left:20PX;
+               padding-top:20PX;
+            }
+ .computer-content  img{
+                margin-top:40px;
+                           }
+                                                         
+ .computer-circleS{
+                    margin-bottom:10PX;
+                        margin-left:600px;
+                              }
+ .computer-circle{
+               width:15px ;
+                height:15px;
+                   border-radius:50%;
+                     background-color:#2d2e2d;
+                         display:inline-block;
+                                                     }
+   .computer-circle:hover {
+    background-color:#e4b314;       
+    transform:scale(1.2);         
+    box-shadow: 0 0 20px #e4b314, 0 0 40px #e4b31455;    
+    cursor:pointer;
+    transform: translateY(-1997px);
+ transition:1s ease;
+ 
+}
+.computer-icon a {
+  width:60px;
+  height:60px;
+   color:#0c0a0a;
+  background-color: #858483;
+   border-radius: 30PX;
+  font-size: 35px;
+  font-weight:blod;
+  padding: 15PX;
+ margin-left:50PX;
+   }
+ .computer-icon a:hover {
+  background-color: #f1eeeb;
+  transform: translateY(-1997px);
+ transition:1s ease;
+    transform:scale(1.2);  
+
+              
+              box-shadow: 0 5px 15px rgba(26, 233, 36, 0.6);
+}
+ 
+.footer-circleS5{
+padding:20px;
+
+float:right;
+ display:inline-block;
+}
+.footer-circle5{
+width:20px ;
+height:20px;
+border-radius:50%;
+background-color:#0e160b;
+float:right;
+ display:inline-block;
+ margin-left:20px;
+ margin-top:10PX;
+ }
+ .
+.footer-circle5:hover {
+    background-color: #e4b314;      
+    transform:scale(1.2);           
+    box-shadow: 0 0 20px #e4b314,    
+                0 0 40px #e4b31455; 
+    cursor:pointer;
+}
+
+                                      /* *******************************
+                                                                   Footer
+                                                                  ******************************** */
+
+  
